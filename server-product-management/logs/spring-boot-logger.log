@@ -1,0 +1,94 @@
+2022-05-02 22:25:30,504 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerProductManagementApplication on gkhn with PID 18803 (/home/gkhn/Desktop/udemy/fullstack/admin-panel/server-product-management/build/classes/java/main started by gkhn in /home/gkhn/Desktop/udemy/fullstack/admin-panel/server-product-management)
+2022-05-02 22:25:30,506 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-05-02 22:25:30,916 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-02 22:25:30,951 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 32ms. Found 3 repository interfaces.
+2022-05-02 22:25:31,131 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9e9342] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-02 22:25:31,141 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$801ee074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-02 22:25:31,281 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-02 22:25:31,288 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-02 22:25:31,293 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-05-02 22:25:31,293 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2022-05-02 22:25:31,342 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-05-02 22:25:31,343 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 814 ms
+2022-05-02 22:25:31,414 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'requestLoggingFilter' configured for use
+2022-05-02 22:25:31,457 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-05-02 22:25:31,535 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-05-02 22:25:31,753 INFO liquibase.logging.core.Slf4jLogger [main] SELECT COUNT(*) FROM dbproduct.DATABASECHANGELOGLOCK
+2022-05-02 22:25:31,758 INFO liquibase.logging.core.Slf4jLogger [main] SELECT COUNT(*) FROM dbproduct.DATABASECHANGELOGLOCK
+2022-05-02 22:25:31,760 INFO liquibase.logging.core.Slf4jLogger [main] SELECT `LOCKED` FROM dbproduct.DATABASECHANGELOGLOCK WHERE ID=1
+2022-05-02 22:25:31,784 INFO liquibase.logging.core.Slf4jLogger [main] Successfully acquired change log lock
+2022-05-02 22:25:32,266 INFO liquibase.logging.core.Slf4jLogger [main] SELECT MD5SUM FROM dbproduct.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-05-02 22:25:32,267 INFO liquibase.logging.core.Slf4jLogger [main] SELECT COUNT(*) FROM dbproduct.DATABASECHANGELOG
+2022-05-02 22:25:32,268 INFO liquibase.logging.core.Slf4jLogger [main] Reading from dbproduct.DATABASECHANGELOG
+2022-05-02 22:25:32,268 INFO liquibase.logging.core.Slf4jLogger [main] SELECT * FROM dbproduct.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-05-02 22:25:32,277 INFO liquibase.logging.core.Slf4jLogger [main] Successfully released change log lock
+2022-05-02 22:25:32,339 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-05-02 22:25:32,363 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2022-05-02 22:25:32,363 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2022-05-02 22:25:32,418 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-05-02 22:25:32,471 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-02 22:25:32,750 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-02 22:25:33,333 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-02 22:25:33,409 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22ab1b8a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a8e30e3, org.springframework.security.web.header.HeaderWriterFilter@38d4488c, org.springframework.web.filter.CorsFilter@320770d7, org.springframework.security.web.authentication.logout.LogoutFilter@7b54a0a4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5dfec221, com.sha.serverproductmanagement.jwt.JWTAuthorizationFilter@4769378c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1942a36e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cd51e4e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e4348c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d6a22dd, org.springframework.security.web.session.SessionManagementFilter@1b800a11, org.springframework.security.web.access.ExceptionTranslationFilter@285c63cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@348bd063]
+2022-05-02 22:25:33,483 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-02 22:25:33,659 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-02 22:25:33,667 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-02 22:25:33,669 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerProductManagementApplication in 3.376 seconds (JVM running for 3.731)
+2022-05-02 22:25:34,299 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-8] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-02 22:25:34,301 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-8] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-02 22:25:34,302 INFO com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-1 - Shutdown initiated...
+2022-05-02 22:25:34,304 INFO com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-1 - Shutdown completed.
+2022-05-02 22:25:40,415 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerProductManagementApplication on gkhn with PID 18977 (/home/gkhn/Desktop/udemy/fullstack/admin-panel/server-product-management/build/classes/java/main started by gkhn in /home/gkhn/Desktop/udemy/fullstack/admin-panel/server-product-management)
+2022-05-02 22:25:40,417 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-05-02 22:25:40,806 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-02 22:25:40,840 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 31ms. Found 3 repository interfaces.
+2022-05-02 22:25:41,056 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$51423abe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-02 22:25:41,069 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$d0c287f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-02 22:25:41,242 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-05-02 22:25:41,250 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-02 22:25:41,256 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-05-02 22:25:41,256 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2022-05-02 22:25:41,324 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-05-02 22:25:41,325 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 882 ms
+2022-05-02 22:25:41,378 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'requestLoggingFilter' configured for use
+2022-05-02 22:25:41,428 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-05-02 22:25:41,522 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-05-02 22:25:41,767 INFO liquibase.logging.core.Slf4jLogger [main] SELECT COUNT(*) FROM dbproduct.DATABASECHANGELOGLOCK
+2022-05-02 22:25:41,771 INFO liquibase.logging.core.Slf4jLogger [main] SELECT COUNT(*) FROM dbproduct.DATABASECHANGELOGLOCK
+2022-05-02 22:25:41,773 INFO liquibase.logging.core.Slf4jLogger [main] SELECT `LOCKED` FROM dbproduct.DATABASECHANGELOGLOCK WHERE ID=1
+2022-05-02 22:25:41,783 INFO liquibase.logging.core.Slf4jLogger [main] Successfully acquired change log lock
+2022-05-02 22:25:42,281 INFO liquibase.logging.core.Slf4jLogger [main] SELECT MD5SUM FROM dbproduct.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2022-05-02 22:25:42,282 INFO liquibase.logging.core.Slf4jLogger [main] SELECT COUNT(*) FROM dbproduct.DATABASECHANGELOG
+2022-05-02 22:25:42,282 INFO liquibase.logging.core.Slf4jLogger [main] Reading from dbproduct.DATABASECHANGELOG
+2022-05-02 22:25:42,283 INFO liquibase.logging.core.Slf4jLogger [main] SELECT * FROM dbproduct.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2022-05-02 22:25:42,295 INFO liquibase.logging.core.Slf4jLogger [main] Successfully released change log lock
+2022-05-02 22:25:42,357 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-05-02 22:25:42,385 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2022-05-02 22:25:42,386 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2022-05-02 22:25:42,460 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-05-02 22:25:42,521 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-02 22:25:42,831 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-02 22:25:43,362 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-02 22:25:43,434 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7978550b, org.springframework.security.web.context.SecurityContextPersistenceFilter@73dd0f23, org.springframework.security.web.header.HeaderWriterFilter@36b761e3, org.springframework.web.filter.CorsFilter@52bc6fcf, org.springframework.security.web.authentication.logout.LogoutFilter@5a99543b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f2dc407, com.sha.serverproductmanagement.jwt.JWTAuthorizationFilter@1942a36e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@28654aff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@579ce2e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f71ae7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24668b5b, org.springframework.security.web.session.SessionManagementFilter@285c63cf, org.springframework.security.web.access.ExceptionTranslationFilter@24731caf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7af56b26]
+2022-05-02 22:25:43,501 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-02 22:25:43,684 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-02 22:25:43,693 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-02 22:25:43,694 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerProductManagementApplication in 3.483 seconds (JVM running for 3.813)
+2022-05-02 22:25:44,699 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-02 22:25:44,699 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-02 22:25:44,709 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 10 ms
+2022-05-02 22:25:44,727 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter [http-nio-8080-exec-1] Before request [uri=/api/user/products]
+2022-05-02 22:25:44,749 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-1] HHH000397: Using ASTQueryTranslatorFactory
+2022-05-02 22:25:44,829 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter [http-nio-8080-exec-1] After request [uri=/api/user/products]
+2022-05-02 22:25:48,469 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter [http-nio-8080-exec-2] Before request [uri=/api/user/login]
+2022-05-02 22:25:48,546 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter [http-nio-8080-exec-2] After request [uri=/api/user/login]
+2022-05-02 22:25:57,038 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter [http-nio-8080-exec-4] Before request [uri=/api/user/login]
+2022-05-02 22:25:57,040 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter [http-nio-8080-exec-4] After request [uri=/api/user/login]
+2022-05-02 22:26:05,717 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-02 22:26:05,719 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-02 22:26:05,720 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2022-05-02 22:26:05,723 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
